@@ -1,0 +1,153 @@
+/****** 375 px ****/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+.main {
+    background-color:hsl(210, 46%, 95%) ;
+}
+.body {
+    background-color: white;
+    margin: 2ch;
+    margin-top: 5ch;
+    margin-bottom: 5ch;
+    border-radius: 10px;
+}
+.image-drawer {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.text-box {
+    margin: 4ch;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+.title {
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    line-height: 2.5ch;
+    letter-spacing: .5px;
+    margin-bottom: 2ch;
+}
+.sub-title {
+    color: hsla(214, 17%, 51%, 0.664);
+    text-align: left;
+    font-weight: 500;
+    line-height: 2.5ch;
+    letter-spacing: .5px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Manrope', sans-serif;
+    padding: 4ch;
+    padding-bottom: 2ch;
+    padding-top: 2ch;
+}
+.person-box {
+    display: flex;
+    font-size: 13px;
+    min-width: 30ch;
+}
+.person-image {
+    border-radius: 50%;
+    width: 5ch;
+    margin-right: 2ch;
+    height: 5ch;
+}
+.wraper {
+    line-height: 3ch;
+}
+.person-name {
+    font-weight: 700;
+    color:hsl(217, 19%, 35%);
+}
+.person-date {
+    color:hsla(214, 17%, 51%, 0.541) ;
+}
+.share {
+    position: absolute;
+    display: none;
+    background-color:hsl(217, 19%, 35%);
+    font-family: 'Manrope', sans-serif;
+    border-radius: 0px 0px 10px 10px;
+    bottom: 15ch;
+}
+#button {
+    display: none;
+}
+.share-button{
+    padding:.6ch;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+}
+#share-close , #share-open {
+    width: 2ch;
+    height: 1.5ch;
+}
+.button-box {
+    margin-top: 1ch;
+    position: relative;
+    z-index: 10;
+}
+.wraper-footer {
+    display: flex;
+    width: 343px;
+    height: 88px;
+    align-items: center;
+}
+.share-text {
+    margin: 3ch;
+    color: hsla(210, 46%, 95%, 0.575) ;
+    letter-spacing: 5px;
+    margin-right: 2ch;
+}
+.social-icons {
+    padding: 1ch;
+}
+
+/******* 1400px ******/
+@media screen and (min-width: 1400px) {
+    .body {
+        display: flex;
+        width: 100ch;
+        position: relative;
+        top: 30ch;
+        left: 35ch;
+    }
+    .image-drawer {
+        border-radius: 10px 0px 0px 10px;
+        height: 40ch;
+    }
+    .triangle {
+        width: 20px;
+        height: 20px;
+        background-color:  hsl(217, 19%, 35%);
+        position: absolute;
+        transform: rotateY(0deg) rotate(45deg);
+        top: 4ch;
+        left: 13.5ch;
+    }
+    .share {
+        width: 30ch;
+        height: 5ch;
+        border-radius: 10px;
+        left: 60ch;
+        top: 18ch;
+    }
+    .share-text {
+        margin-top: 0%;
+        margin-bottom: 4ch;
+    }
+    .social-icons {
+        margin-bottom: 3.5ch;
+    }
+    .wraper-footer {
+        margin-left: 1.5ch;
+    }
+}
